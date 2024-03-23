@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Linking Example</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+    }
+    nav {
+        background-color: #444;
+        padding: 10px 0;
+        text-align: center;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+    }
+    nav a:hover {
+        background-color: #666;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+    h1, h2 {
+        margin-bottom: 10px;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+    .gallery img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Gallery</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="image_links.html">Gallery</a>
+        <a href="portfolio.html">Portfolio</a>
+    </nav>
+    <div class="container">
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>Welcome to our website. Check out the latest in technology!</p>
+            <a href="index.html">
+                <img src="img1.jpg" width="100%" alt="Technology Image">
+            </a>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <a href="portfolio.html">
+                    <img src="img4.jpg" alt="Nature Image 1">
+                    <br/>Artwork 1
+                </a>
+                <a href="portfolio.html">
+                    <img src="img2.jpg" alt="Nature Image 2">
+                   <br/>Artwork 2
+                </a>
+                <a href="portfolio.html">
+                    <img src="img3.jpg" alt="Nature Image 3">
+                     <br/>Artwork 3
+                </a>
+            </div>
+        </section>
+        
+    </div>
+</body>
+</html>
